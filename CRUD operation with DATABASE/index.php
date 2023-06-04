@@ -170,7 +170,7 @@ j.submit();
 
 if(!table_exist($conn, "Student")){
 
-echo "Nothing to Show!";
+$conn->query("CREATE DATABASE student;");
 $crTbquery ="create table Student(Id int  not null auto_increment primary key ,
 Name text not null ,
 City text not null,
